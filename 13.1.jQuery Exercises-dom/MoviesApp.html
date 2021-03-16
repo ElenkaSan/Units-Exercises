@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies App</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet"> 
+ <style>
+  h1, .movie {
+    Color: rgb(30, 42, 207);
+    font-size: 2.6em;  
+    text-shadow: 5px 5px 15px rgb(10, 11, 99);
+  }  
+  body {
+    background: linear-gradient(0.25turn,#3f87a6 10%, #5df5d4 30%, #ff00bf 100%);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    justify-content: space-between;
+    font-family: 'Syne Mono', monospace;
+  }
+  button:hover {
+    cursor: pointer;
+  }    
+  .rate {
+    color: salmon;
+    font-size: 1em;
+  }
+  .button {
+    background-color: rgb(136, 255, 0);
+    border-color: black;
+    font-size: 1em;
+    margin-left: 30%;
+    margin-right: 30% 
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+   <h1 id="title" class="text-center">Welcome to my Movie App 🎥</h1>
+    <form action="submit" class="row m-5">
+     <input id="title-input" type="text" class="text form-control mb-3" placeholder="Movie Title">
+        <select id="movie-rate" class="custom-select">
+          <option selected>Movie Rating</option>
+          <option value="★">★</option>
+          <option value="★★">★★</option>
+          <option value="★★★">★★★</option>
+          <option value="★★★★">★★★★</option>
+          <option value="★★★★★">★★★★★</option>
+       </select>
+     <h2>
+       <br>     
+       <button id="submit-btn" class="btn btn-outline-danger btn-lg">Submit</button>
+       <input class="btn btn-outline-info btn-lg" type="reset" value="Reset Form">     
+     </h2>
+    </form>    
+       <div id="starMovie" class="row lgm-8"> 
+      </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   <script src="MoviesApp.js"></script>  
+  </body>
+</html>
+
