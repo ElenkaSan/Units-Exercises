@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mock2!</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+ <body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">LOGO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-end">
+          <li class="nav-item active">
+            <a class="nav-link my-2" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item"> 
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+            <a class="nav-link my-0" href="#">Contact</a>
+          </button>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-2" href="#">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle my-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Messages <span class="badge bg-success">12</span></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Inbox <i class="fas fa-inbox"></i></a>
+              <a class="dropdown-item" href="#">Sent <i class="fas fa-paper-plane"></i></a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Trash <i class="fas fa-trash-alt"></i></a>
+            </div>
+          </li>           
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">We are happy to help you!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <a class="text-success" href="#"><i class="fas fa-mobile-alt"></i> 555 555 555 </a> 
+                  <br>
+                  <a class="text-success" href="#"><i class="fas fa-comments"></i> Chat with Us </a>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Save Chat</button>
+                </div>
+              </div>
+            </div>
+          </div>      
+        </ul>
+      </div>
+    </nav>
+     <br>
+       <h1 class="font-weight-bold p-2">Dashboard:</h1>
+     <br>
+        <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Team</th>
+                <th scope="col">All Star</th>
+                <th scope="col">Remove</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Steph</td>
+                <td>Warriors</td>
+                <td>Yes</td>
+                <td><button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt text-white"></i></button></td>
+              </tr>
+              <tr>
+                <td>Lebron</td>
+                <td>Cavaliers</td>
+                <td>Yes</td>
+                <td><button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt text-white"></i></button></td>
+              </tr>
+              <tr>
+                <td>Dwayne</td>
+                <td>Heat</td>
+                <td>Yes</td>
+                <td><button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt text-white"></i></button></td>
+              </tr>
+              <tr>
+                <td>Kobe</td>
+                <td>Lakers</td>
+                <td>Yes <span class="badge bg-warning text-dark">Last</span></td>
+                <td><button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt text-white"></i></button></td>
+              </tr>
+              <tr>
+                <td>Isaiah</td>
+                <td>Celtics</td>
+                <td>Yes <span class="badge bg-success">First</span></td>
+                <td><button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt text-white"></i></button></td>
+              </tr>
+            </tbody>
+          </table>
+         <h2 class="font-weight-bold p-2">Todos:</h2>
+         <!-- <div class="border border-warning rounded"> -->
+        <div class="d-flex alert alert-success my-0" role="alert">
+          <div class="input-group-text alert-success">
+            <input type="checkbox" aria-label="Checkbox for following text input">
+          </div> 
+          <h6>Feel good about about Bootstrap</h6>
+        </div>
+        <div class="d-flex alert alert-primary my-0" role="alert">
+          <div class="input-group-text alert-primary">
+            <input type="checkbox" aria-label="Checkbox for following text input">
+          </div> 
+          <h6>Feel informed about Bootstrap</h6>
+        </div>
+        <div class="d-flex alert alert-warning my-0" role="alert">
+          <div class="input-group-text alert-warning">
+            <input type="checkbox" aria-label="Checkbox for following text input">
+          </div> 
+          <h6>Feel warned about Bootstrap</h6>
+        </div>
+        <div class="d-flex alert alert-warning my-0" role="alert">
+          <div class="input-group-text alert-warning">
+            <input type="checkbox" aria-label="Checkbox for following text input">
+          </div> 
+          <h6>Maybe I should read the docs...</h6>
+        </div>
+        <div class="d-flex alert alert-danger my-0" role="alert">
+          <div class="input-group-text alert-danger">
+            <input type="checkbox" aria-label="Checkbox for following text input">
+          </div> 
+          <h6>Danger Zone</h6>
+        </div>
+        <div class="d-flex alert alert-danger my-0" role="alert">
+          <div class="input-group-text alert-danger">
+            <input type="checkbox" aria-label="Checkbox for following text input">
+          </div> 
+          <h6>I really should read the docs...</h6>
+        </div>
+      </div>
+    <!-- </div>     -->
+    <script>
+      $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+      })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+</html>
