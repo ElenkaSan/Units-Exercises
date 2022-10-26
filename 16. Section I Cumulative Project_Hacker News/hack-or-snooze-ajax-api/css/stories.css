@@ -10,6 +10,16 @@
   margin: 10px 0;
 }
 
+.trash-can {
+  color: rgb(177, 49, 17);
+  cursor: pointer;
+}
+
+.star {
+  color: rgb(10, 138, 63);
+  cursor: pointer;
+}
+
 #stories-loading-msg {
   font-weight: bold;
   font-size: 150%;
@@ -20,7 +30,7 @@
 /* Individual stories */
 
 .story-link {
-  color: black;
+  color: rgb(38, 21, 51);
   font-size: 0.85rem;
   font-weight: normal;
   margin: 18px 0;
