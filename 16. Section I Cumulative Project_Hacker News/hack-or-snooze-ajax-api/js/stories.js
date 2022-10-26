@@ -19,10 +19,11 @@ async function getAndShowStoriesOnStart() {
  * Returns the markup for the story.
  */
 
+////add a favorite parameter
+
 function generateStoryMarkup(story, deleteButton = false, isFavorite = true) {
   // console.debug("generateStoryMarkup", story);
   let showDeleteIcon = deleteButton ? removeHTMLbtn() : '';
-  // if a user is logged in, show favorite/not-favorite star
   let showStarIcon = isFavorite ? favoriteNotStoryHTML(story, currentUser) : ''
 
   const hostName = story.getHostName();
@@ -39,14 +40,14 @@ function generateStoryMarkup(story, deleteButton = false, isFavorite = true) {
       </li>
     `);
 }
-/** Making delete button HTML for story */
+
 function removeHTMLbtn(){
   return `
     <span class="trash-can">
      <i class="fas fa-trash-alt"></i>
     </span>`;
 }
-/** Making favorite/not-favorite star for story */
+
 function favoriteNotStoryHTML(story, user){
   const star = user.isUserFavorite(story) ? 'fas' : 'far';
   return `
@@ -112,7 +113,9 @@ function newStoryOnThePage(){
     $ownStories.append('<h4>No stories here.</h4>');
   } else {
     for (let story of currentUser.ownStories){
-      let $story = generateStoryMarkup(story, true);
+      let isFav = currentUser.isUserFavorite(story);
+
+      let $story = generateStoryMarkup(story, true, isFav);
       $ownStories.append($story);
     }
   }
